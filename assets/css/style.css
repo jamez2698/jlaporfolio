@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bebas+Neue&family=Bungee&family=Concert+One&family=Squada+One&display=swap');
+/*
+font-family: 'Alata', sans-serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Bungee', sans-serif;
+font-family: 'Concert One', sans-serif;
+font-family: 'Squada One', sans-serif;
+*/
+
+/*NAVBAR*/
+
+.navbar{
+    background-color: #fff5f5;
+}
+/*NAVBAR END*/
+
+
+
+/*DESKTOP VIEW*/
+  @media screen and (min-width: 1024px) {
+    /*HOME*/
+    .p1 {
+      color: #c5d1eb;
+      font-size: min(3vw, 4.5vh); 
+      font-family: 'Squada One', sans-serif;
+      user-select: none;
+    }
+    
+    .im {
+      color: #c5d1eb;
+      font-size: min(5vw, 10vh); 
+      font-family: 'Squada One', sans-serif;
+      user-select: none;
+    }
+    
+    .p2 {
+      color: #35fd1e;
+      font-size: min(5vw, 10vh); 
+      font-family: 'Squada One', sans-serif;
+      user-select: none;
+      -webkit-text-stroke: 1.5px #000;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+    
+    .p3 {
+      color: #ffffff;
+      font-size: min(3vw, 6vh); 
+      font-family: 'Squada One', sans-serif;
+      user-select: none;
+    }
+
+    .icons{
+      font-size: min(3vw, 5vh);
+      color: #ffffff;
+    }
+
+    .icons i {
+      transition: transform 0.2s ease-in-out;
+      cursor: pointer;
+    }
+    
+    .icons i:hover {
+      transform: scale(2); 
+    }
+
+    #messenger:hover{
+      color: #0196F7;
+    }
+    #linkedin:hover{
+      color: #0270AD;
+    }
+    #github:hover{
+      color: #333333;
+    }
+    #insta:hover{
+      color: #F7DE4E;
+    }
+    #whatsapp:hover{
+      color: #279AD2;
+    }
+    
+    a{
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    .profpic{
+      width: max(20vw, 40vh);
+      margin-left: 80px;
+      height: auto;
+      box-shadow: 5px 5px 5px rgb(47, 255, 0);
+    }
+
+    #detail {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 75vh;
+    }
+
+    #text-type {
+      color: #c5f467;
+      font-size: min(3vw, 6vh);
+      font-family: 'Squada One', sans-serif;
+      user-select: none;
+    }
+      /* Optional: Blinking cursor animation */
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+      
+      #text-type::after {
+        content: "|";
+        animation: blink 0.7s infinite;
+      } 
+
+      h2, h4 {
+        line-height: 0.8; 
+      }
+    /*HOME END*/
+
+  }
+/*DESKTOP VIEW END*/
+
+
+  @media screen and (max-width: 1024px) {
+  /*HOME*/
+  .p1 {
+    color: #c5d1eb;
+    font-size: max(3vw, 4.5vh); 
+    font-family: 'Squada One', sans-serif;
+    user-select: none;
+  }
+  
+  .im {
+    color: #c5d1eb;
+    font-size: max(5vw, 10vh); 
+    font-family: 'Squada One', sans-serif;
+    user-select: none;
+  }
+  
+  .p2 {
+    color: #35fd1e;
+    font-size: max(5vw, 10vh); 
+    font-family: 'Squada One', sans-serif;
+    user-select: none;
+    -webkit-text-stroke: 1.5px #000;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .p3 {
+    color: #ffffff;
+    font-size: max(3vw, 6vh); 
+    font-family: 'Squada One', sans-serif;
+    user-select: none;
+  }
+
+  .icons{
+    font-size: max(3vw, 5vh);
+    color: #ffffff;
+  }
+
+  .icons i {
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .icons i:hover {
+    transform: scale(2); 
+  }
+
+  #messenger:hover{
+    color: #0196F7;
+  }
+  #linkedin:hover{
+    color: #0270AD;
+  }
+  #github:hover{
+    color: #333333;
+  }
+  #insta:hover{
+    color: #F7DE4E;
+  }
+  #tele:hover{
+    color: #279AD2;
+  }
+  
+  a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .profpic{
+    width: max(10vw, 35vh);
+    margin-left: 80px;
+    height: auto;
+    box-shadow: 5px 5px 5px rgb(47, 255, 0);
+  }
+
+  #detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+  }
+
+  #text-type {
+    color: #c5f467;
+    font-size: max(3vw, 6vh);
+    font-family: 'Squada One', sans-serif;
+    user-select: none;
+  }
+    /* Optional: Blinking cursor animation */
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+    
+    #text-type::after {
+      content: "|";
+      animation: blink 0.7s infinite;
+    } 
+
+    h2, h4 {
+      line-height: 0.8; 
+    }
+  /*HOME END*/
+  }
+
+  @media screen and (max-width: 767px) {
+   /*HOME*/
+   .p1 {
+    color: #c5d1eb;
+    font-size: max(1vw, 3vh); 
+    font-family: 'Squada One', sans-serif;
+    user-select: none;
+  }
+  
+  .im {
+    color: #c5d1eb;
+    font-size: max(2vw, 4vh); 
+    font-family: 'Squada One', sans-serif;
+    user-select: none;
+  }
+  
+  .p2 {
+    color: #35fd1e;
+    font-size: max(2vw, 4vh); 
+    font-family: 'Squada One', sans-serif;
+    user-select: none;
+    -webkit-text-stroke: .5px #000;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .p3 {
+    color: #ffffff;
+    font-size: max(1vw, 3vh); 
+    font-family: 'Squada One', sans-serif;
+    user-select: none;
+  }
+
+  .icons{
+    font-size: max(1vw, 3vh);
+    color: #ffffff;
+  }
+
+  .icons i {
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .icons i:hover {
+    transform: scale(2); 
+  }
+
+  #messenger:hover{
+    color: #0196F7;
+  }
+  #linkedin:hover{
+    color: #0270AD;
+  }
+  #github:hover{
+    color: #333333;
+  }
+  #insta:hover{
+    color: #F7DE4E;
+  }
+  #tele:hover{
+    color: #279AD2;
+  }
+  
+  a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .profpic{
+    width: max(10vw, 20vh);
+    margin-left: 20px;
+    height: auto;
+    box-shadow: 5px 5px 5px rgb(47, 255, 0);
+  }
+
+  #detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+  }
+
+  #text-type {
+    color: #c5f467;
+    font-size: max(1vw, 3vh);
+    font-family: 'Squada One', sans-serif;
+    user-select: none;
+  }
+    /* Optional: Blinking cursor animation */
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+    
+    #text-type::after {
+      content: "|";
+      animation: blink 0.7s infinite;
+    } 
+
+    h2, h4 {
+      line-height: 0.8; 
+    }
+  /*HOME END*/
+  
+}
+
+  #particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 110%;
+    z-index: -1;
+    background-color: #141d2b;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .sample{
+    font-family: 'Concert One', sans-serif;
+    font-size: 60px;
+  }
+  .btn{
+    font-family: 'Alata', sans-serif;
+    font-size: 20px;
+  }
+  .titles{
+    font-family: 'Alata', sans-serif;
+    font-size: 30px;
+  }
+
+
+  #portfolio {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.portfolio-item h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.portfolio-item p {
+    font-size: 16px;
+}
+
+/* Add hover effect for portfolio items */
+.portfolio-item:hover {
+    transform: scale(1.2);
+}
+
+.person-group {
+            display: block;
+        }
+        .person-group.hidden {
+            display: none;
+        }
+
+
+        .image-popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.5s; /* Add a transition for opacity */
+        }
+
+        .image-popup.active {
+            opacity: 1; /* When the "active" class is added, it becomes visible with a fade-in effect */
+        }
+
+        .popup-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .popup-content {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 25px;
+            cursor: pointer;
+            color: #555;
+        }
+        
+        #popup-image{
+            height: 400px;
+        }
+
+        .square-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .image-container {
+            width: 200px; 
+            height: 200px;
+            overflow: hidden;
+            object-fit: cover;
+        }
+
+        

@@ -1,0 +1,25 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /myporfolio/
+
+	# Allow access to the "assets" folder
+	RewriteRule ^assets/ - [L]
+
+	# Prevent direct access to the "modules" and "include" folders
+	RewriteRule ^modules/ - [F]
+	RewriteRule ^include/ - [F]
+
+	# Add trailing slash if not present for URLs under /myporfolio
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_URI} ^/myporfolio/[^/]+[^/]$
+	RewriteRule (.*)$ /myporfolio/$1/ [R=301,L]
+
+	# Route to index.php
+	RewriteRule ^index\.php$ - [L]
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule . index.php [L,QSA]
+</IfModule>
+
+ErrorDocument 403 /myporfolio/404.php
